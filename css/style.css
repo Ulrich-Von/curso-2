@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+    background: #f0f3f5;
+    color:#000;
+    font-family: 'Dancing Script', cursive;
+}
+header{
+    background: #5b7989;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    /*
+    transition: background 1s;
+    transition-property: width,height;
+    transition-duration: 2s,4s;
+    }
+
+header:hover{
+    width: 125%;
+    height: 125%;
+    */
+}
+header nav a{
+	color: #fff;
+    text-decoration: none;
+}
+
+/* una sombra de 2px de color #02010a*/
+
+header h1{
+    color:#FFF;
+    text-shadow: 2px 2px #02010a;
+}
+header nav{
+    color: #fff;
+    text-shadow: 2px 2px #02010a;
+    display: inline-block;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+header nav:hover{
+    text-decoration: none;
+}
+/*
+header-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}*/
+
+
+.w3-spin{animation:w3-spin 2s infinite linear}@keyframes w3-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.w3-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.w3-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.w3-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+
+.w3-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+
+
+
+
+/*
+Para ambas versiones el header debe tener una animación de slidein (debe venir de abajo hacia arriba y rebotar) está animación debe hacerse variando el margin-top de 150% a -5% y luego a 0%, en los momentos 0%, 60% y 100% respectivamente. 
+*/
+
+
+.w3-animate-bottom{
+    position:relative;
+    animation:animatebottom 0.4s;
+}
+@keyframes animatebottom{
+    from{
+        margin-top: 150%;
+        bottom:-300px;
+        opacity:0;
+    }
+    to{
+        margin-top: -5%;
+        bottom:0;
+        opacity:1
+    }
+}
+
+img{
+    width: 100%;
+    height: 70%;
+    margin: 5px 5px;
+    /*padding: 5px 5px;*/
+}
+#imagenprincipal{
+-webkit-filter: grayscale(10%); /* Chrome, Safari, Opera */
+    filter: grayscale(10%);
+    margin: 5px, 5px;
+}
+#imagen1 img{
+    -webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+	filter: blur(10px);
+}
+#imagen2,#imagen4,#imagen6 img{
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+}
+#imagen3 img{
+    -webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);
+}
+.contenedor-main{
+    margin-bottom: 20px;
+    background: #82c3a6;
+}
+footer{
+    padding: 20px 0;
+    background: #C6d5c5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+/*
+main{
+    background: #fff;
+    color: #424242;
+    padding: 20px 0;
+}
+aside{
+    background: #dee5e8;
+    padding: 60px 0;
+    color: #0d47a1;
+}
+.widgets{
+    background: #f2f2f2;
+    color: #424242;
+    margin-bottom: 20px;
+}
+.widgets > div{
+    background: #2196f3;
+    color: #fff;
+    padding: 20px;
+}
+*/
+
